@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/listview.css">
+</head>
+<body>
+    
+    <!--  TOP HEADER (Logo + Search + Icons) -->
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:18px 60px; border-bottom:1px solid #ccc;">
+
+        <!-- Logo -->
+        <div style="display:flex; align-items:center;">
+            <div style="background:#4a7aff; color:white; padding:8px; border-radius:5px; margin-right:8px;">
+                🔒
+            </div>
+            <span style="font-size:20px; font-weight:bold; color:#4a7aff;">Brand</span>
+        </div>
+
+        <!-- Search -->
+        <div style="display:flex; width:50%;">
+            <input type="text" placeholder="Search"
+                style="width:60%; padding:8px; border:1px solid #4a7aff;">
+
+            <select style="padding:8px; border:1px solid #4a7aff;">
+                <option>All category</option>
+            </select>
+
+            <button style="background:#4a7aff; color:white; padding:8px 15px; border:none;">
+                Search
+            </button>
+        </div>
+
+        <!-- Icons -->
+        <div style="display:flex; gap:15px;">
+            <span>👤 Profile</span>
+            <span>💬 Message</span>
+            <span>📦 Orders</span>
+            <span>🛒 My cart</span>
+        </div>
+
+    </div>
+
+
+    <!-- 🔵 STEP 2: SECOND NAVBAR -->
+    <div style="display:flex; justify-content:space-between; padding:12px 60px; border-bottom:2px solid #4a7aff;">
+
+        <!-- Left -->
+        <div style="display:flex; gap:20px;">
+            <span>☰ All category</span>
+            <span>Hot offers</span>
+            <span>Gift boxes</span>
+            <span>Projects</span>
+            <span>Menu item</span>
+            <span>Help</span>
+        </div>
+
+        <!-- Right -->
+        <div style="display:flex; gap:20px;">
+            <span>English, USD ▼</span>
+            <span>Ship to 🇩🇪 ▼</span>
+        </div>
+
+    </div>
+
+<!---------------------------------main layout + sidebar---------------------------------------------------->
+
+    <section class="listing-page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <!-- CATEGORY -->
+        <div class="filter-box">
+
+            <div class="filter-title">
+                <h3>Category</h3>
+            </div>
+
+            <ul>
+                <li>Mobile accessory</li>
+                <li>Electronics</li>
+                <li>Smartphones</li>
+                <li>Modern tech</li>
+                <li class="see-all">See all</li>
+            </ul>
+
+        </div>
+
+
+        <!-- BRANDS -->
+        <div class="filter-box">
+
+            <div class="filter-title">
+                <h3>Brands</h3>
+            </div>
+
+            <label><input type="checkbox"> Samsung</label>
+
+            <label><input type="checkbox"> Apple</label>
+
+            <label><input type="checkbox"> Huawei</label>
+
+            <label><input type="checkbox"> Poco</label>
+
+            <label><input type="checkbox"> Lenovo</label>
+
+            <p class="see-all">See all</p>
+
+        </div>
+
+
+        <!-- FEATURES -->
+        <div class="filter-box">
+
+            <div class="filter-title">
+                <h3>Features</h3>
+            </div>
+
+            <label><input type="checkbox"> Metallic</label>
+
+            <label><input type="checkbox"> Plastic cover</label>
+
+            <label><input type="checkbox"> 8GB Ram</label>
+
+            <label><input type="checkbox"> Super power</label>
+
+            <label><input type="checkbox"> Large Memory</label>
+
+            <p class="see-all">See all</p>
+
+        </div>
+
+
+        <!-- SIMPLE ITEMS -->
+        <div class="simple-filter">
+            <h4>Price range</h4>
+        </div>
+
+        <div class="simple-filter">
+            <h4>Condition</h4>
+        </div>
+
+        <div class="simple-filter">
+            <h4>Ratings</h4>
+        </div>
+
+        <div class="simple-filter">
+            <h4>Manufacturer</h4>
+        </div>
+
+    </aside>
+
+
+    <!-- RIGHT CONTENT -->
+    <div class="products-area">
+        <!-- TOP BAR -->
+<div class="top-filter-bar">
+
+    <!-- LEFT -->
+    <div class="top-left">
+
+        <p>
+            12,911 items in <span>Mobile accessory</span>
+        </p>
+
+    </div>
+
+
+    <!-- RIGHT -->
+    <div class="top-right">
+
+        <!-- VERIFIED -->
+        <label class="verified">
+
+            <input type="checkbox">
+
+            Verified only
+
+        </label>
+
+
+        <!-- DROPDOWN -->
+        <select>
+
+            <option>Featured</option>
+
+        </select>
+
+
+        <!-- VIEW ICONS -->
+        <div class="view-icons">
+
+            <button>☰</button>
+
+            <button>▦</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!----------------product grid section----------------------->
+<!-- PRODUCTS LIST -->
+<div class="products-list">
+
+    <!-- CARD 1 -->
+    <div class="product-item">
+
+        <!-- IMAGE -->
+        <div class="product-image">
+
+            <img src="../assets/products/phone.png" alt="">
+
+        </div>
+
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h3>Canon Camera EOS 2000, Black 10x zoom</h3>
+
+            <!-- PRICE -->
+            <div class="price-row">
+
+                <span class="new-price">$998.00</span>
+
+                <span class="old-price">$1128.00</span>
+
+            </div>
+
+
+            <!-- RATING -->
+            <div class="rating-row">
+
+                ⭐⭐⭐⭐☆
+
+                <span class="rating-number">7.5</span>
+
+                <span class="orders">154 orders</span>
+
+                <span class="shipping">Free Shipping</span>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore.
+            </p>
+
+
+            <!-- LINK -->
+            <a href="#">View details</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 1 -->
+    <div class="product-item">
+
+        <!-- IMAGE -->
+        <div class="product-image">
+
+            <img src="../assets/products/phone.png" alt="">
+
+        </div>
+
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h3>Canon Camera EOS 2000, Black 10x zoom</h3>
+
+            <!-- PRICE -->
+            <div class="price-row">
+
+                <span class="new-price">$998.00</span>
+
+                <span class="old-price">$1128.00</span>
+
+            </div>
+
+
+            <!-- RATING -->
+            <div class="rating-row">
+
+                ⭐⭐⭐⭐☆
+
+                <span class="rating-number">7.5</span>
+
+                <span class="orders">154 orders</span>
+
+                <span class="shipping">Free Shipping</span>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore.
+            </p>
+
+
+            <!-- LINK -->
+            <a href="#">View details</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 1 -->
+    <div class="product-item">
+
+        <!-- IMAGE -->
+        <div class="product-image">
+
+            <img src="../assets/products/phone.png" alt="">
+
+        </div>
+
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h3>Canon Camera EOS 2000, Black 10x zoom</h3>
+
+            <!-- PRICE -->
+            <div class="price-row">
+
+                <span class="new-price">$998.00</span>
+
+                <span class="old-price">$1128.00</span>
+
+            </div>
+
+
+            <!-- RATING -->
+            <div class="rating-row">
+
+                ⭐⭐⭐⭐☆
+
+                <span class="rating-number">7.5</span>
+
+                <span class="orders">154 orders</span>
+
+                <span class="shipping">Free Shipping</span>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore.
+            </p>
+
+
+            <!-- LINK -->
+            <a href="#">View details</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 1 -->
+    <div class="product-item">
+
+        <!-- IMAGE -->
+        <div class="product-image">
+
+            <img src="../assets/products/phone.png" alt="">
+
+        </div>
+
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h3>Canon Camera EOS 2000, Black 10x zoom</h3>
+
+            <!-- PRICE -->
+            <div class="price-row">
+
+                <span class="new-price">$998.00</span>
+
+                <span class="old-price">$1128.00</span>
+
+            </div>
+
+
+            <!-- RATING -->
+            <div class="rating-row">
+
+                ⭐⭐⭐⭐☆
+
+                <span class="rating-number">7.5</span>
+
+                <span class="orders">154 orders</span>
+
+                <span class="shipping">Free Shipping</span>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore.
+            </p>
+
+
+            <!-- LINK -->
+            <a href="#">View details</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 1 -->
+    <div class="product-item">
+
+        <!-- IMAGE -->
+        <div class="product-image">
+
+            <img src="../assets/products/phone.png" alt="">
+
+        </div>
+
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h3>Canon Camera EOS 2000, Black 10x zoom</h3>
+
+            <!-- PRICE -->
+            <div class="price-row">
+
+                <span class="new-price">$998.00</span>
+
+                <span class="old-price">$1128.00</span>
+
+            </div>
+
+
+            <!-- RATING -->
+            <div class="rating-row">
+
+                ⭐⭐⭐⭐☆
+
+                <span class="rating-number">7.5</span>
+
+                <span class="orders">154 orders</span>
+
+                <span class="shipping">Free Shipping</span>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore.
+            </p>
+
+
+            <!-- LINK -->
+            <a href="#">View details</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 1 -->
+    <div class="product-item">
+
+        <!-- IMAGE -->
+        <div class="product-image">
+
+            <img src="../assets/products/phone.png" alt="">
+
+        </div>
+
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h3>Canon Camera EOS 2000, Black 10x zoom</h3>
+
+            <!-- PRICE -->
+            <div class="price-row">
+
+                <span class="new-price">$998.00</span>
+
+                <span class="old-price">$1128.00</span>
+
+            </div>
+
+
+            <!-- RATING -->
+            <div class="rating-row">
+
+                ⭐⭐⭐⭐☆
+
+                <span class="rating-number">7.5</span>
+
+                <span class="orders">154 orders</span>
+
+                <span class="shipping">Free Shipping</span>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore.
+            </p>
+
+
+            <!-- LINK -->
+            <a href="#">View details</a>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER START ================= -->
+
+<!-- Newsletter Section -->
+<div style="background:#f2f3f5; padding:40px 0; text-align:center;">
+
+    <h2 style="margin:0; font-family:Arial;">
+        Subscribe on our newsletter
+    </h2>
+
+    <p style="color:gray; margin-top:10px; font-family:Arial;">
+        Get daily news on upcoming offers from many suppliers all over the world
+    </p>
+
+    <!-- Email Box -->
+    <div style="margin-top:20px; display:flex; justify-content:center;">
+
+        <input type="email"
+            placeholder="Email"
+            style="width:280px; padding:12px; border:1px solid #ccc;
+            border-radius:5px 0 0 5px; outline:none;">
+
+        <button style="background:#0d6efd; color:white; border:none;
+            padding:12px 20px; border-radius:0 5px 5px 0;">
+            Subscribe
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- Main Footer -->
+<div style="background:white; padding:50px 60px;
+display:flex; justify-content:space-between; flex-wrap:wrap;">
+
+    <!-- Brand Section -->
+    <div>
+
+        <div style="display:flex; align-items:center;">
+
+            <div style="background:#0d6efd; width:35px; height:35px;
+            border-radius:6px; margin-right:10px;"></div>
+
+            <h2 style="color:#0d6efd; font-family:Arial;">
+                Brand
+            </h2>
+
+        </div>
+
+        <p style="color:gray; line-height:28px; font-family:Arial;">
+            Best information about the company <br>
+            gives here but now lorem ipsum is <br>
+            here lorem text now lorem.
+        </p>
+
+        <!-- Social Icons -->
+        <div style="display:flex; gap:10px; margin-top:20px;">
+
+            <div style="width:35px; height:35px; background:#e5e5e5;
+            border-radius:50%; display:flex; align-items:center;
+            justify-content:center;">
+                f
+            </div>
+
+            <div style="width:35px; height:35px; background:#e5e5e5;
+            border-radius:50%; display:flex; align-items:center;
+            justify-content:center;">
+                t
+            </div>
+
+            <div style="width:35px; height:35px; background:#e5e5e5;
+            border-radius:50%; display:flex; align-items:center;
+            justify-content:center;">
+                in
+            </div>
+
+            <div style="width:35px; height:35px; background:#e5e5e5;
+            border-radius:50%; display:flex; align-items:center;
+            justify-content:center;">
+                📷
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- About -->
+    <div>
+        <h3>About</h3>
+
+        <p style="color:gray;">About Us</p>
+        <p style="color:gray;">Find store</p>
+        <p style="color:gray;">Categories</p>
+        <p style="color:gray;">Blogs</p>
+    </div>
+
+
+
+    <!-- Partnership -->
+    <div>
+        <h3>Partnership</h3>
+
+        <p style="color:gray;">About Us</p>
+        <p style="color:gray;">Find store</p>
+        <p style="color:gray;">Categories</p>
+        <p style="color:gray;">Blogs</p>
+    </div>
+
+
+
+    <!-- Information -->
+    <div>
+        <h3>Information</h3>
+
+        <p style="color:gray;">Help Center</p>
+        <p style="color:gray;">Money Refund</p>
+        <p style="color:gray;">Shipping</p>
+        <p style="color:gray;">Contact us</p>
+    </div>
+
+
+
+    <!-- Users -->
+    <div>
+        <h3>For users</h3>
+
+        <p style="color:gray;">Login</p>
+        <p style="color:gray;">Register</p>
+        <p style="color:gray;">Settings</p>
+        <p style="color:gray;">My Orders</p>
+    </div>
+
+
+
+    <!-- App Section -->
+    <div>
+
+        <h3>Get app</h3>
+
+        <img src="../assets/Layout/Misc/market-button.png"
+            width="120">
+
+        <br><br>
+
+        <img src="../assets/Layout/Misc/Group.png"
+            width="135">
+
+    </div>
+
+</div>
+
+
+
+<!-- Bottom Footer -->
+<div style="background:#f2f3f5; padding:20px 60px;
+display:flex; justify-content:space-between; align-items:center;">
+
+    <p style="color:gray;">
+        © 2023 Ecommerce.
+    </p>
+
+    <div>
+        🇺🇸 English, USD ▼
+    </div>
+
+</div>
+
+<!-- ================= FOOTER END ================= -->
+
+</body>
+</html>
