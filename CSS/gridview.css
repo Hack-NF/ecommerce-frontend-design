@@ -10,6 +10,27 @@ body{
   color:#333;
 }
 
+.nav-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons .icon-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-icons .icon{
+    font-size: 22px;
+}
+
+.nav-icons .icon-box p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
 /* ================= MAIN CONTAINER ================= */
 
 .container{
@@ -310,22 +331,59 @@ body{
   border-color:#0d6efd;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:992px){
-
-  .container{
-    width:95%;
-  }
-
-  .products{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
+/* ================= MOBILE RESPONSIVE ================= */
 
 @media(max-width:768px){
 
+  body{
+    overflow-x:hidden;
+  }
+
+  /* TOP HEADER */
+
+  div[style*="justify-content:space-between"]{
+    flex-direction:column;
+    gap:20px;
+    padding:20px !important;
+  }
+
+  /* SEARCH BAR */
+
+  div[style*="width:50%"]{
+    width:100% !important;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  div[style*="width:50%"] input,
+  div[style*="width:50%"] select,
+  div[style*="width:50%"] button{
+    width:100% !important;
+  }
+
+  /* NAV ICONS */
+
+  .nav-icons{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  /* SECOND NAVBAR */
+
+  div[style*="padding:14px 60px"]{
+    flex-direction:column;
+    gap:15px;
+    padding:20px !important;
+  }
+
+  div[style*="gap:20px"]{
+    flex-wrap:wrap;
+  }
+
+  /* MAIN CONTAINER */
+
   .container{
+    width:95%;
     flex-direction:column;
   }
 
@@ -333,19 +391,64 @@ body{
     width:100%;
   }
 
+  /* PRODUCTS GRID */
+
   .products{
     grid-template-columns:1fr;
   }
 
+  /* TOP FILTER */
+
   .top-filter-bar{
     flex-direction:column;
-    gap:15px;
     align-items:flex-start;
+    gap:15px;
   }
+
+  .top-right{
+    flex-wrap:wrap;
+  }
+
+  /* FILTER TAGS */
 
   .filter-tags{
     flex-direction:column;
     align-items:flex-start;
     gap:15px;
   }
+
+  .tags-left{
+    flex-wrap:wrap;
+  }
+
+  /* FOOTER */
+
+  div[style*="padding:50px 60px"]{
+    flex-direction:column;
+    gap:30px;
+    padding:30px 20px !important;
+  }
+
+  div[style*="padding:20px 60px"]{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+    padding:20px !important;
+  }
+
+  /* NEWSLETTER */
+
+  div[style*="justify-content:center"]{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+  }
+
+  div[style*="justify-content:center"] input,
+  div[style*="justify-content:center"] button{
+    width:100% !important;
+    max-width:350px;
+    border-radius:6px !important;
+  }
+
 }

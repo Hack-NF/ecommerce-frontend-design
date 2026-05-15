@@ -5,6 +5,27 @@
     font-family: sans-serif;
 }
 
+.nav-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons .icon-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-icons .icon{
+    font-size: 22px;
+}
+
+.nav-icons .icon-box p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
 .hero{
     width: 93%;
     margin: 30px auto;
@@ -772,4 +793,138 @@ body{
     font-size: 13px;
 
     color: #8B96A5;
+}
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 768px){
+
+    /* TOP NAVBAR */
+
+    body{
+        overflow-x: hidden;
+    }
+
+    div[style*="justify-content:space-between"]{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* SEARCH BAR */
+
+    div[style*="width:50%"]{
+        width: 100% !important;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div[style*="width:50%"] input,
+    div[style*="width:50%"] select,
+    div[style*="width:50%"] button{
+        width: 100%;
+    }
+
+    /* ICONS */
+
+    .nav-icons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .categories,
+    .banner,
+    .cta-boxes{
+        width: 100%;
+    }
+
+    .banner{
+        height: 250px;
+    }
+
+    .banner-content h1{
+        font-size: 30px;
+    }
+
+    .banner-content h2{
+        font-size: 22px;
+    }
+
+    /* DEALS SECTION */
+
+    .deals-section{
+        width: 95%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .deals-info,
+    .product-box{
+        width: 50%;
+    }
+
+    /* HOME SECTION */
+
+    .home-outdoor-section{
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .left-card,
+    .left-card1,
+    .products-grid{
+        width: 100%;
+    }
+
+    .products-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* BLUE SECTION */
+
+    .supplier-section{
+        width: 95%;
+    }
+
+    .supplier-banner{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .banner-text,
+    .inquiry-box{
+        width: 100%;
+    }
+
+    /* RECOMMENDED */
+
+    .recommended-section,
+    .services-section,
+    .suppliers-section{
+        width: 95%;
+    }
+
+    .recommended-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .services-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .suppliers-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
